@@ -196,7 +196,7 @@ playBtn.addEventListener("click", () => {
         clearInterval(timer);
         console.log(remainingTime, angle);
         newAngle = angle;
-        pausedTime += remainingTime;
+        pausedTime = remainingTime;
         console.log(pausedTime)
         playBtn.innerHTML = playIcon;
         playBtn.classList.remove("pause");
