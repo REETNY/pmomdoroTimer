@@ -296,3 +296,16 @@ main{
     cursor: pointer;
 }
 
+
+
+@media only screen and (max-width: 550px){
+    .main-circle-timer{
+        width: 340px;
+        height: 340px;
+    }
+
+    .outerMost-circle{
+        width: 330px;
+        height: 330px;
+    }
+}
