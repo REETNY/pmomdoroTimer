@@ -35,7 +35,7 @@ removeBtn.addEventListener("click", () => {
 const hourRange = document.querySelector("#hourRange");
 let v1 = document.querySelector("#v1");
 
-hourRange.addEventListener("mousemove", () => {
+hourRange.addEventListener("change", () => {
     console.log(hourRange.value);
     v1.innerText = hourRange.value;
 })
@@ -43,14 +43,14 @@ hourRange.addEventListener("mousemove", () => {
 const minRange = document.querySelector("#minRange");
 let v2 = document.querySelector("#v2");
 
-minRange.addEventListener("mousemove", () => {
+minRange.addEventListener("change", () => {
     v2.innerText = minRange.value;
 });
 
 const secRange = document.querySelector("#secRange");
 let v3 = document.querySelector("#v3");
 
-secRange.addEventListener("mousemove", () => {
+secRange.addEventListener("change", () => {
     v3.innerText = secRange.value;
 })
 
