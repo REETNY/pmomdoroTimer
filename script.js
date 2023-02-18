@@ -145,9 +145,9 @@ function startTimer() {
         ringBell(remainingTime);
     }
 
-    let hour = Math.floor(remainingTime / 1000 / 60 / 60) % 24;
-    let min = Math.floor(remainingTime / 1000 / 60) % 60;
-    let sec = Math.ceil(remainingTime / 1000) % 60; 
+    let hour = checkNum(Math.floor(remainingTime / 1000 / 60 / 60) % 24);
+    let min = checkNum(Math.floor(remainingTime / 1000 / 60) % 60);
+    let sec = checkNum(Math.ceil(remainingTime / 1000) % 60); 
 
     hoursEl.innerText = hour;
     minsEl.innerText = min;
@@ -284,7 +284,7 @@ clearBtn.addEventListener("click", () => {
     clearTimeOut();
     bell.style.animation = "none";
     bell.style.color = green;
-
+    settingsBtn.disabled = false;
     hoursEl.innerText = `00`;
     minsEl.innerText = `00`;
     secsEl.innerText = `00`;
@@ -303,4 +303,8 @@ function disableBtns() {
 function enableBtns() {
     playBtn.disabled = false;
     resetBtn.disabled = false;
+}
+
+function checkNum(num){
+    return num > 9 ? num : `0${num}`;
 }
