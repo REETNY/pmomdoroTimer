@@ -215,10 +215,10 @@ main{
 #eachLabel{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     column-gap: 5px;
     margin-bottom: 8px;
+    column-gap: 20px;
 }
 
 #eachLabel:last-child{
@@ -226,12 +226,18 @@ main{
 }
 
 #eachLabel input{
-    width: 80%;
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: whitesmoke;
 }
 
 #eachLabel span{
     font-size: 15px;
     font-weight: 600;
+    width: 30px;
 }
 
 .submit{

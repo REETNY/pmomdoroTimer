@@ -30,19 +30,19 @@
 
             <span class="remove"><i class="fa fa-times" aria-hidden="true"></i></span>
 
-            <label id="eachLabel" for="hourRange" class="hr">
-                <input type="range" class="input" name="hours" id="hourRange" min="0" max="99">
-                <span class="v" id="v1">..</span>
+            <label id="eachLabel" for="hourRange" class="hrLabels">
+                <span class="v" id="v1">Hours</span>
+                <input type="number" class="input" name="hours" id="hourRange" min="0" max="99">
             </label>
 
-            <label id="eachLabel" for="minRange" class="hr">
-                <input type="range" class="input" name="mins" id="minRange" min="0" max="59">
-                <span class="v" id="v2">..</span>
+            <label id="eachLabel" for="minRange" class="hrLabels">
+                 <span class="v" id="v2">Mins</span>
+                <input type="number" class="input" name="mins" id="minRange" min="0" max="59">
             </label>
 
-            <label id="eachLabel" for="secRange" class="hr">
-                <input type="range" class="input" name="secs" id="secRange" min="0" max="59">
-                <span class="v" id="v3">..</span>
+            <label id="eachLabel" for="secRange" class="hrLabels">
+                <span class="v" id="v3">Secs</span>
+                <input type="number" class="input" name="secs" id="secRange" min="0" max="59">
             </label>
             <span class="submit">
                 <button class="add" id="add">ADD</button>

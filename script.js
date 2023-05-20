@@ -33,37 +33,21 @@ removeBtn.addEventListener("click", () => {
 })
 
 const hourRange = document.querySelector("#hourRange");
-let v1 = document.querySelector("#v1");
-
-hourRange.addEventListener("change", () => {
-    console.log(hourRange.value);
-    v1.innerText = hourRange.value;
-})
 
 const minRange = document.querySelector("#minRange");
-let v2 = document.querySelector("#v2");
-
-minRange.addEventListener("change", () => {
-    v2.innerText = minRange.value;
-});
 
 const secRange = document.querySelector("#secRange");
-let v3 = document.querySelector("#v3");
-
-secRange.addEventListener("change", () => {
-    v3.innerText = secRange.value;
-})
 
 const addTime = document.querySelector("#add");
 
 addTime.addEventListener("click", () => {
-    if(v1.innerText == ".." && v2.innerText == ".." && v3.innerText == ".."){
+    if(hourRange.value == "" && minRange.value == "" && secRange.value == ""){
         return;
     }else{
         form.classList.remove("openSettings");
-        hr = parseFloat(v1.innerText);
-        min = parseFloat(v2.innerText);
-        sec = parseFloat(v3.innerText);
+        hr = parseFloat(hourRange.value);
+        min = parseFloat(minRange.value);
+        sec = parseFloat(secRange.value);
 
         enableBtns()
     }
